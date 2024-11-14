@@ -1,4 +1,4 @@
-rint("A - Add Record")
+print("A - Add Record")
 print("B - View Records")
 print("C - Clear All Records")
 print("D - Exit")
@@ -16,3 +16,8 @@ while choice.upper() != 'D':
  clearRec()
  elif choice.upper() == 'D':
  print("Thank you!")
+ 
+ def clearRec():
+ file = open(filename, 'w')
+ file.write("")
+ file.close()
